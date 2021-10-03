@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ボタン</title>
+<meta name="keywords" content="">
+<meta name="description" content=">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+<script>
+function soundbell(n) {
+  var id = 'sound-'+n ;
+  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' ) {
+    document.getElementById( id ).currentTime = 0;
+  }
+  document.getElementById( id ).play() ;
+}
+
+</script>
+
+<style>
+body{
+margin:20px;
+text-align: center;
+background-color:#11AA78;
+}
+h1{
+	font-weight:normal;
+	font-size:20px;
+	color:#fff;
+}
+.wrap{
+	max-width: 375px;
+	margin:auto;
+}
+img{
+    width:60px;
+    height:60px;
+}
+</style>
+</head>
+
+<body id="top">
+<audio id="sound-1" preload="auto">  <source src="se/1.mp3" type="audio/mp3"> </audio>
+<audio id="sound-2" preload="auto">  <source src="se/2.mp3" type="audio/mp3"> </audio>
+<audio id="sound-3" preload="auto">  <source src="se/3.mp3" type="audio/mp3"> </audio>
+<audio id="sound-4" preload="auto">  <source src="se/4.mp3" type="audio/mp3"> </audio>
+<audio id="sound-5" preload="auto">  <source src="se/5.mp3" type="audio/mp3"> </audio>
+<audio id="sound-6" preload="auto">  <source src="se/6.mp3" type="audio/mp3"> </audio>
+<audio id="sound-7" preload="auto">  <source src="se/7.mp3" type="audio/mp3"> </audio>
+<audio id="sound-8" preload="auto">  <source src="se/8.mp3" type="audio/mp3"> </audio>
+<audio id="sound-9" preload="auto">  <source src="se/9.mp3" type="audio/mp3"> </audio>
+<audio id="sound-10" preload="auto"> <source src="se/10.mp3" type="audio/mp3"> </audio>
+<audio id="sound-11" preload="auto"> <source src="se/11.mp3" type="audio/mp3"> </audio>
+<div class="wrap">
+<h1>ボタン</h1>
+<div id="btn01"><img src="img/btn.jpg" onclick="soundbell(1)" alt="1"></div>
+<div id="btn02"><img src="img/btn.jpg" onclick="soundbell(2)" alt="2"></div>
+<div id="btn03"><img src="img/btn.jpg" onclick="soundbell(3)" alt="3"></div>
+<div id="btn04"><img src="img/btn.jpg" onclick="soundbell(4)" alt="3"></div>
+<div id="btn05"><img src="img/btn.jpg" onclick="soundbell(5)" alt="3"></div>
+<div id="btn06"><img src="img/btn.jpg" onclick="soundbell(6)" alt="3"></div>
+<div id="btn07"><img src="img/btn.jpg" onclick="soundbell(7)" alt="3"></div>
+<div id="btn08"><img src="img/btn.jpg" onclick="soundbell(8)" alt="3"></div>
+<div id="btn09"><img src="img/btn.jpg" onclick="soundbell(9)" alt="3"></div>
+<div id="btn10"><img src="img/btn.jpg" onclick="soundbell(10)" alt="3"></div>
+<div id="btn11"><img src="img/btn.jpg" onclick="soundbell(11)" alt="3"></div>
+</div>
+</body>
+</html>
+
